@@ -7,42 +7,49 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import java.time.Duration;
-import static java.util.concurrent.TimeUnit.*;
 
-public class demoqa_table {
-    @Test
-    public void table() {
+import java.time.Duration;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
+
+public class ModelBox_Small {
+    EdgeDriver driver;
+    @BeforeTest
+    public void openBrowser() {
         EdgeOptions options = new EdgeOptions();
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         options.addArguments("--guest");
-        WebDriver driver = new EdgeDriver(options);
-        driver.get("https://demoqa.com/webtables");
+        driver = new EdgeDriver(options);
+    }
+        @Test
+        public void TestModelBox(){
+        driver.get("https://demoqa.com/modal-dialogs");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(20, SECONDS);
 
-        // Scroll down
-        Actions actions =new Actions(driver);
-        actions.sendKeys(Keys.PAGE_DOWN).build().perform();
+        WebElement smallButton = driver.findElement(By.id("showSmallModal"));
+        smallButton.click();
+
+        WebElement ModalBoxText  = driver.findElement(By.className("modal-body"));
+        //Assert Type Actual and Expected
+        String ActualText = ModalBoxText.getText();
+        String ExpectedText = "This is a small modal. It has very less content";
+        Assert.assertEquals(ActualText,ExpectedText,"matched");
+
+        System.out.println(ActualText);
+        //Assert Type True
+       Assert.assertTrue(ModalBoxText.isDisplayed(),"Displayed Matched");
+       Assert.assertTrue(ModalBoxText.isEnabled(), String.valueOf(true));
 
 
-        WebElement editButton = driver.findElement(By.xpath("//span[@id=\"edit-record-3\"]"));
-        editButton.click();
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("registration-form-modal")));
-
-        WebElement modal = driver.findElement(By.id("registration-form-modal"));
-
-        WebElement ageVerify = driver.findElement(By.xpath("//input[@placeholder=\"Age\"]"));
-        String getValue = ageVerify.getAttribute("value");
-        Assert.assertEquals("29", getValue);
-        System.out.println(getValue);
-
-        WebElement closeBtn = driver.findElement(By.xpath("//button[@class=\"close\"]"));
-        closeBtn.click();
-
+        WebElement ModalClose = driver.findElement(By.className("close"));
+        ModalClose.click();
+         }
+         @AfterTest
+         public void closeBrowser(){
         driver.quit();
         }
     }
