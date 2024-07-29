@@ -9,6 +9,8 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class vwoLoginPageSucess {
     @Test
     public void vwo_Login() throws InterruptedException{
@@ -32,6 +34,7 @@ public class vwoLoginPageSucess {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         //click on sign-in button
         WebElement button =driver.findElement(By.id("js-login-btn"));
         button.click();
