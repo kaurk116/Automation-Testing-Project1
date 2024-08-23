@@ -42,6 +42,7 @@ Create a Framework and Use the following:
 
 
 
+![image](https://github.com/user-attachments/assets/da2e6b88-a827-48fa-ae50-7aeece567c43)
 
 
 
@@ -54,8 +55,9 @@ Web tables verification
     • ![image](https://github.com/user-attachments/assets/bcfc101e-3aae-4bbc-888a-405c199ecd13)
 
     • Click on the Add and Add a new Row and verify in table.
-        ◦![image](https://github.com/user-attachments/assets/8bcb28c9-17b6-43d7-bbea-73b31bc5df2e)
-      ![image](https://github.com/user-attachments/assets/d668ad79-6a6e-4552-bfaf-f0171361a8a2) 
+        ![image](https://github.com/user-attachments/assets/c729df67-cd1f-436d-932c-6116b453054e)
+![image](https://github.com/user-attachments/assets/55038e36-504a-4e20-9db2-b096476b0e4a)
+
     • Verify the details.
     • Try to create a generic locator so that it won't break if we add new rows.
 
@@ -112,6 +114,8 @@ Create a Framework and Use the following:
     • Cloud Grids
     • SonarLint, Java > 8
     • Run Local and on Selenoid Integration. (Docker if possible)
+![image](https://github.com/user-attachments/assets/07f565ed-2ce9-4abd-8355-781f431bf5f3)
+![image](https://github.com/user-attachments/assets/79de8fdf-3627-4494-b63d-3ad01f8ef248)
 
 Automation Challenge 5 :
 
