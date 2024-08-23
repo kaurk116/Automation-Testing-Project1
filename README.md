@@ -1,3 +1,5 @@
+Level #1 - Automation Challenges for SDETs / Automation Testers
+
 
 Automation Challenge 1:
 
@@ -13,13 +15,10 @@ Calculate the Total Amount of Money Spent via Selenium Script
 
 Use - https://github.com/PramodDutta/AdvanceSeleniumFrameworkTTA
 
-Create a Framework and Use the following:
-Automation Table Challenge #1 - Watch Video
 
 Create a Framework and Use the following:
 
     • Java, Selenium, TestNG, POM
-
     • Maven, Assert J, POM
     • Thread Local Support → Thread Safety
     • Allure Report
@@ -31,6 +30,20 @@ Create a Framework and Use the following:
     • Run Local and on Selenoid Integration. (Docker if possible)
 
 
+![image](https://github.com/user-attachments/assets/9e98ae62-d551-44c7-9076-d63be7c36a11)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Automation Challenge 2:
@@ -38,16 +51,20 @@ Web tables verification
 
     • Navigate to the Web Tables - Pgae - https://demoqa.com/webtables
     • Click on the 3rd edit button
+    • ![image](https://github.com/user-attachments/assets/bcfc101e-3aae-4bbc-888a-405c199ecd13)
 
-          image
-Click on the Add and Add a new Row and verify in table.
-• Verify the details.
-• Try to create a generic locator so that it won't break if we add new rows.
+    • Click on the Add and Add a new Row and verify in table.
+        ◦![image](https://github.com/user-attachments/assets/8bcb28c9-17b6-43d7-bbea-73b31bc5df2e)
+      ![image](https://github.com/user-attachments/assets/d668ad79-6a6e-4552-bfaf-f0171361a8a2) 
+    • Verify the details.
+    • Try to create a generic locator so that it won't break if we add new rows.
 
 Automation Challenge 3
-• Verify the content of the Model
-• https://demoqa.com/modal-dialogs
-•
+    • Verify the content of the Model
+    • https://demoqa.com/modal-dialogs
+    • 
+![image](https://github.com/user-attachments/assets/f10b3e1a-1976-4196-860a-0c3d83c511ac)
+
 
 
 Automation Challenge 4 :
@@ -60,7 +77,29 @@ Login and Dashboard Page Automation in App.vwo.com and Run in two browsers paral
 
 Automation Login Challenge #2 - Watch Video
 
-    
+
+
+
+![image](https://github.com/user-attachments/assets/a7ea3b71-aa6c-49cc-8dbc-0dc8ab25a850)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Create a Framework and Use the following:
 
     • Java, Selenium, TestNG, POM
@@ -85,4 +124,3 @@ Iframe and Multi Window Problem with Heatmap.
 
 
 Automation Heatmap Challenge #3 - Watch Video
-
