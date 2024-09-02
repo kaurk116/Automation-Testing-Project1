@@ -95,10 +95,10 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>4.0.0-beta-1</version> <!-- Check for the latest version -->
+          <version>3.8.1</version> <!-- Use a stable version -->
           <configuration>
-            <source>11</source> <!-- Or the version of JDK you are using -->
-            <target>11</target> <!-- Or the version of JDK you are using -->
+            <source>11</source> <!-- Or your JDK version -->
+            <target>11</target> <!-- Or your JDK version -->
           </configuration>
         </plugin>
       </plugins>
