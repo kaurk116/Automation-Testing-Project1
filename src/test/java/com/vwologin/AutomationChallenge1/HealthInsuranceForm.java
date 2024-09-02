@@ -57,11 +57,11 @@ public class HealthInsuranceForm {
         selectmonth.click();
         selectmonth.click();
         selectmonth.click();
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement dateButton = wait2.until(ExpectedConditions.elementToBeClickable(
+        /*//WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //WebElement dateButton = wait2.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//button[@role=\"gridcell\"][text()='3']")
         ));
-        dateButton.click();
+        dateButton.click();*/
     }
     @AfterTest
     public void closeBrowser() {

@@ -28,7 +28,6 @@ public class healdthformtest {
     public void start1() {
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(20));
         WebElement adult = driver.findElement(By.xpath("//input[@id=\"One Adult\"]"));
         adult.click();
         // WebElement child =driver.findElement(By.xpath("//input[@id=\"Two Adults\"]"));
@@ -61,8 +60,6 @@ public class healdthformtest {
 @Test
     public void start2() {
         driver.get(url);
-         driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
-          WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(200));
            //WebElement child =driver.findElement(By.xpath("//input[@id=\"Two Adults\"]"));
            WebElement child =driver.findElement(By.id("Two Adults"));
         //id="Two Adults"
