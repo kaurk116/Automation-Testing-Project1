@@ -46,7 +46,12 @@
       <artifactId>extentreports</artifactId>
       <version>5.0.9</version> <!-- Check for the latest version -->
     </dependency>
-
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version> <!-- Check for the latest version -->
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -86,13 +91,14 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>4.0.0-beta-1</version> <!-- Check for the latest version -->
           <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
+            <source>11</source> <!-- Or the version of JDK you are using -->
+            <target>11</target> <!-- Or the version of JDK you are using -->
           </configuration>
         </plugin>
       </plugins>
