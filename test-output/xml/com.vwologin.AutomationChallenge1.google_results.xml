@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.906">
+           time="7.750">
     <properties></properties>
 
 
 
             <testcase
                 name="testsearch"
-                time="5.906"
+                time="7.750"
                 classname="com.vwologin.AutomationChallenge1.google">
             </testcase>
 </testsuite>
