@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Automation-Testing-Project1"
+<testsuite name="/home/karam/Documents/Projects/Automation-Testing-Project1/src/test/java/com/vwologin/AutomationChallenge1/google.java"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="7.429">
+           time="22.517">
     <properties></properties>
 
 
 
             <testcase
                 name="testsearch"
-                time="7.429"
+                time="22.517"
                 classname="com.vwologin.AutomationChallenge1.google">
             </testcase>
 </testsuite>
