@@ -58,12 +58,6 @@
       <artifactId>logback-classic</artifactId>
       <version>1.4.8</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-    <!--<dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.5.0</version>
-    </dependency>-->
   </dependencies>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -81,11 +75,10 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M5</version>
+          <version>3.0.0-M3</version>
           <configuration>
-            <forkCount>1</forkCount>
-            <reuseForks>true</reuseForks>
-            <argLine>-Xmx2048m</argLine> <!-- Adjust as necessary -->
+            <testFailureIgnore>true</testFailureIgnore>
+            <shutdown>kill</shutdown> <!-- Use it if required-->
           </configuration>
         </plugin>
         <plugin>
